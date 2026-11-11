@@ -199,10 +199,6 @@ Work order WO-001 demonstrates how using two oil filters reduces inventory and r
 
 ## 9. Application Screenshots
 
-Screenshots of the application will be included in this section before submission.
-
-The screenshots will show the dashboard, equipment management, work orders, spare parts inventory, maintenance history, and reports.
-
 ### 9.1 Home Dashboard
 
 Displays equipment totals, open work orders, and maintenance scheduled within the next seven days.

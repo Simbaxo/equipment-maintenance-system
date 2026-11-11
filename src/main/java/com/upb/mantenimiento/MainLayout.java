@@ -1,4 +1,3 @@
-
 package com.upb.mantenimiento;
 
 import com.upb.mantenimiento.views.HomeView;
@@ -32,9 +31,10 @@ public class MainLayout extends AppLayout {
         // Create the navigation button
         DrawerToggle menuButton = new DrawerToggle();
 
+        // Add the navigation bar
         addToNavbar(menuButton, title);
 
-        // Create the sidebar
+        // Create the sidebar title
         H2 menuTitle = new H2("Maintenance");
         menuTitle.getStyle().set("margin", "0");
 
@@ -54,12 +54,12 @@ public class MainLayout extends AppLayout {
         );
 
         menu.addItem(
-        new SideNavItem("Work Orders", WorkOrderView.class)
-);
+                new SideNavItem("Work Orders", WorkOrderView.class)
+        );
 
-menu.addItem(
-        new SideNavItem("Maintenance History", MaintenanceHistoryView.class)
-);
+        menu.addItem(
+                new SideNavItem("Maintenance History", MaintenanceHistoryView.class)
+        );
 
         menu.addItem(
                 new SideNavItem("Technicians", TechnicianView.class)
@@ -70,10 +70,10 @@ menu.addItem(
         );
 
         menu.addItem(
-        new SideNavItem("Reports", ReportsView.class)
-);
+                new SideNavItem("Reports", ReportsView.class)
+        );
 
-        // Add the menu to the sidebar
+        // Create the sidebar layout
         VerticalLayout sidebar = new VerticalLayout();
 
         sidebar.add(
@@ -85,7 +85,7 @@ menu.addItem(
         sidebar.setPadding(true);
         sidebar.setSpacing(true);
 
+        // Add the sidebar to the application
         addToDrawer(sidebar);
     }
 }
-

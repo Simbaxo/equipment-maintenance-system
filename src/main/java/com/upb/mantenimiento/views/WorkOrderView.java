@@ -531,10 +531,10 @@ return new HorizontalLayout(
             List<WorkOrder> orders =
                     orderManager.loadWorkOrders();
 
-            // Do not delete completed maintenance history
-            if (order.isCompleted()) {
+            // Check if spare parts were used in this order
+            if (!usageManager.getPartsForOrder(order.getId()).isEmpty()) {
                 Notification.show(
-                        "Completed work orders must be kept for maintenance history."
+                        "Cannot delete a work order with recorded spare parts."
                 );
                 dialog.close();
                 return;

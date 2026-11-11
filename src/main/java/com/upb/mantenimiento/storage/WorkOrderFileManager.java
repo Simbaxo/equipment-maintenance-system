@@ -84,7 +84,9 @@ public class WorkOrderFileManager {
                     if (!fields[9].isBlank()) {
                         completionDate =
                                 LocalDate.parse(fields[9]);
-                    }                    // Validate required information
+                    }
+
+                    // Validate required information
                     if (id.isEmpty()
                             || equipmentCode.isEmpty()
                             || technicianId.isEmpty()
@@ -148,7 +150,9 @@ public class WorkOrderFileManager {
                                 + line
                         );
                         continue;
-                    }                    WorkOrder order = new WorkOrder(
+                    }
+
+                    WorkOrder order = new WorkOrder(
                             id,
                             equipmentCode,
                             technicianId,
@@ -244,13 +248,17 @@ public class WorkOrderFileManager {
                 throw new IllegalArgumentException(
                         "Unfinished orders cannot have a completion date."
                 );
-            }            // Convert optional dates into text
+            }
+
+            // Convert optional dates into text
             String completionDate = "";
 
             if (order.getCompletionDate() != null) {
                 completionDate =
                         order.getCompletionDate().toString();
-            }            // Create the text file record
+            }
+
+            // Create the text file record
             String line =
                     cleanText(order.getId()) + "|"
                     + cleanText(order.getEquipmentCode()) + "|"
