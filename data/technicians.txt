@@ -1,0 +1,3 @@
+TECH-001|Carlos Martinez|Mechanical Maintenance|3001234567|Active
+TECH-002|Ana Rodriguez|Electrical Maintenance|3009876543|Active
+TECH-003|Juan Lopez|General Maintenance|3015551234|Active

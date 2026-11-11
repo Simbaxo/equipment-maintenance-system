@@ -1,0 +1,4 @@
+PART-001|Oil Filter|Industrial compressor oil filter|45000.0|10
+PART-002|Drive Belt|Replacement belt for industrial machines|85000.0|8
+PART-003|Hydraulic Seal|Seal for hydraulic pump systems|25000.0|15
+PART-004|Motor Bearing|Industrial motor replacement bearing|120000.0|4
